@@ -75,7 +75,7 @@ Edita el número de WhatsApp en los archivos `index.html` y `talent.html`:
 ```html
 <a href="https://wa.me/34650014048" class="whatsapp-btn">
 ```
-Reemplaza `34XXXXXXXXX` con tu número de teléfono con código de país.
+Reemplaza `34650014048` con tu número de teléfono con código de país.
 
 ### Agregar/Modificar Talentos
 Edita el archivo `js/data.js` para agregar o modificar la información de talentos.
