@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mucha Magia - Agencia de Actores</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>Mucha Magia</h1>
+                <p class="tagline">Agencia de Talentos</p>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#inicio" class="active">Inicio</a></li>
+                <li><a href="#actores">Actores</a></li>
+                <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/34XXXXXXXXX" class="whatsapp-btn" target="_blank" title="Contáctanos por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h2>Talento Profesional</h2>
+            <p>Descubre los mejores actores y actrices de nuestro catálogo</p>
+            <div class="hero-buttons">
+                <a href="#galeria" class="btn btn-primary">Ver Galería</a>
+                <a href="#contacto" class="btn btn-secondary">Contactar</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories" id="actores">
+        <div class="container">
+            <h2>Categorías</h2>
+            <div class="category-filters">
+                <button class="filter-btn active" data-filter="todos">Todos</button>
+                <button class="filter-btn" data-filter="actor">Actores</button>
+                <button class="filter-btn" data-filter="actriz">Actrices</button>
+                <button class="filter-btn" data-filter="cara-nueva">Cara Nueva</button>
+                <button class="filter-btn" data-filter="infantil">Infantil</button>
+                <button class="filter-btn" data-filter="internacional">Internacional</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <div class="container">
+            <h3>Buscar Talentos</h3>
+            <div class="search-filters">
+                <input type="text" id="searchName" placeholder="Nombre o Palabras Clave" class="search-input">
+                <select id="searchAge" class="search-select">
+                    <option value="">Edad</option>
+                    <option value="18-25">18 - 25 años</option>
+                    <option value="26-35">26 - 35 años</option>
+                    <option value="36-45">36 - 45 años</option>
+                    <option value="46+">46+ años</option>
+                </select>
+                <select id="searchGender" class="search-select">
+                    <option value="">Sexo</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                    <option value="otro">Otro</option>
+                </select>
+                <select id="searchOrigin" class="search-select">
+                    <option value="">Procedencia</option>
+                    <option value="españa">España</option>
+                    <option value="latinoamérica">Latinoamérica</option>
+                    <option value="europa">Europa</option>
+                    <option value="internacional">Internacional</option>
+                </select>
+                <button id="resetFilters" class="btn btn-secondary">Limpiar</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="galeria">
+        <div class="container">
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Cards will be loaded by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="sobre-nosotros">
+        <div class="container">
+            <h2>Sobre Nosotros</h2>
+            <p>Mucha Magia es una agencia de talentos profesional dedicada a conectar actores y actrices con oportunidades cinematográficas, televisivas y publicitarias. Con una vasta experiencia en el sector, representamos a los mejores talentos del mercado.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contacto">
+        <div class="container">
+            <h2>Contacto</h2>
+            <form class="contact-form" id="contactForm">
+                <input type="text" placeholder="Tu Nombre" required>
+                <input type="email" placeholder="Tu Email" required>
+                <textarea placeholder="Tu Mensaje" rows="5" required></textarea>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Mucha Magia - Agencia de Talentos. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
