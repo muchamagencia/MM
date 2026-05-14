@@ -25,93 +25,90 @@
     </nav>
 
     <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/34XXXXXXXXX" class="whatsapp-btn" target="_blank" title="Contáctanos por WhatsApp">
+    <a href="https://wa.me/34650014048" class="whatsapp-btn" target="_blank" title="Contáctanos por WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
 
     <!-- Hero Section -->
-    <section className="relative h-screen flex items-center bg-[#f7f7f5] overflow-hidden">
+<section class="hero" id="inicio">
 
-      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+    <div class="hero-content">
 
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-        >
-          <p className="uppercase tracking-[0.3em] text-sm mb-6 text-neutral-500">
-            Representación artística
-          </p>
+        <div class="hero-text">
 
-          <h1 className="text-6xl md:text-7xl font-serif leading-none mb-8">
-            Talento con presencia cinematográfica.
-          </h1>
+            <p class="hero-subtitle">
+                Representación artística
+            </p>
 
-          <p className="text-lg text-neutral-600 max-w-lg mb-8 leading-relaxed">
-            Representamos actores y actrices con proyección nacional e internacional.
-          </p>
+            <h1>
+                Talento con presencia cinematográfica.
+            </h1>
 
-          <div className="flex gap-4">
-            <button className="bg-black text-white px-8 py-4 uppercase tracking-wide text-sm hover:bg-neutral-800 transition">
-              Ver talentos
-            </button>
+            <p class="hero-description">
+                Representamos actores y actrices con proyección nacional e internacional.
+            </p>
 
-            <button className="border border-black px-8 py-4 uppercase tracking-wide text-sm hover:bg-black hover:text-white transition">
-              Contactar
-            </button>
-          </div>
-        </motion.div>
+            <div class="hero-buttons">
+                <a href="#galeria" class="btn-primary">
+                    Ver talentos
+                </a>
 
-        <motion.div
-          initial={{ opacity: 0, scale: 1.1 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1.2 }}
-          className="relative h-[700px]"
-        >
-          <img
-            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1200"
-            alt="hero"
-            className="w-full h-full object-cover rounded-sm"
-          />
-        </motion.div>
-      </div>
-    </section>
-  )
-}
-
-    <!-- Categories Section -->
-    <section className="py-10 border-b border-neutral-200 bg-white">
-      <div className="max-w-7xl mx-auto px-6">
-
-        <div className="grid md:grid-cols-5 gap-4">
-
-          <select className="border border-neutral-300 px-4 py-4 bg-white">
-            <option>Tipo</option>
-          </select>
-
-          <select className="border border-neutral-300 px-4 py-4 bg-white">
-            <option>Edad</option>
-          </select>
-
-          <select className="border border-neutral-300 px-4 py-4 bg-white">
-            <option>Sexo</option>
-          </select>
-
-          <select className="border border-neutral-300 px-4 py-4 bg-white">
-            <option>Procedencia</option>
-          </select>
-
-          <input
-            type="text"
-            placeholder="Buscar talento"
-            className="border border-neutral-300 px-4 py-4"
-          />
+                <a href="#contacto" class="btn-secondary">
+                    Contactar
+                </a>
+            </div>
 
         </div>
-      </div>
-    </section>
-  )
-}
+
+        <div class="hero-image">
+            <img 
+                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1200"
+                alt="Actriz"
+            >
+        </div>
+
+    </div>
+
+</section>
+    <!-- Categories Section -->
+    <section class="filters-section">
+
+    <div class="container">
+
+        <div class="filters-grid">
+
+            <select class="filter-select">
+                <option>Tipo</option>
+                <option>Actor</option>
+                <option>Actriz</option>
+                <option>Cara Nueva</option>
+                <option>Infantil</option>
+                <option>Internacional</option>
+            </select>
+
+            <select class="filter-select">
+                <option>Edad</option>
+            </select>
+
+            <select class="filter-select">
+                <option>Sexo</option>
+            </select>
+
+            <select class="filter-select">
+                <option>Procedencia</option>
+            </select>
+
+            <input 
+                type="text"
+                class="filter-input"
+                placeholder="Buscar talento..."
+            >
+
+        </div>
+
+    </div>
+
+</section>
 
     <!-- Search Section -->
     <section class="search-section">
