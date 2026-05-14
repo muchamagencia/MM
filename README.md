@@ -37,17 +37,35 @@ Página web profesional para una agencia de actores y actrices con característi
 ## Estructura de Archivos
 
 ```
-MM/
-├── index.html           # Página principal
-├── talent.html          # Página de perfil de talento
-├── css/
-│   ├── styles.css       # Estilos principales
-│   └── talent.css       # Estilos de página de talento
-├── js/
-│   ├── data.js          # Base de datos de talentos
-│   ├── script.js        # JavaScript principal
-│   └── talent.js        # JavaScript de página de talento
-└── README.md            # Este archivo
+src
+│
+├── app
+│   ├── page.tsx
+│   └── globals.css
+│
+├── components
+│   ├── navbar
+│   │   └── Navbar.tsx
+│   │
+│   ├── hero
+│   │   └── Hero.tsx
+│   │
+│   ├── gallery
+│   │   ├── TalentGrid.tsx
+│   │   ├── TalentCard.tsx
+│   │   └── Filters.tsx
+│   │
+│   ├── whatsapp
+│   │   └── WhatsAppButton.tsx
+│   │
+│   └── footer
+│       └── Footer.tsx
+│
+├── data
+│   └── talentos.ts
+│
+└── types
+    └── talento.ts
 ```
 
 ## Configuración
@@ -55,7 +73,7 @@ MM/
 ### Números de WhatsApp
 Edita el número de WhatsApp en los archivos `index.html` y `talent.html`:
 ```html
-<a href="https://wa.me/34XXXXXXXXX" class="whatsapp-btn">
+<a href="https://wa.me/34650014048" class="whatsapp-btn">
 ```
 Reemplaza `34XXXXXXXXX` con tu número de teléfono con código de país.
 
