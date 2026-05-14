@@ -1,4 +1,4 @@
-# Mucha Magia - Agencia de Talentos
+# Mucha M - Agencia de Talentos
 
 ## Descripción
 Página web profesional para una agencia de actores y actrices con características avanzadas de búsqueda y filtrado.
@@ -99,4 +99,4 @@ Para soporte o actualizaciones, contacta con el equipo de Mucha Magia.
 
 ---
 
-**© 2026 Mucha Magia - Agencia de Talentos**
+**© 2026 Mucha M - Agencia de Talentos**
