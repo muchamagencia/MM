@@ -91,6 +91,7 @@ function applyFilters() {
     const ageRange = searchInputs.age.value;
     if (ageRange) {
         filtered = filtered.filter(t => {
+            if (ageRange === '18-') return t.age <= 18 &&;
             if (ageRange === '18-25') return t.age >= 18 && t.age <= 25;
             if (ageRange === '26-35') return t.age >= 26 && t.age <= 35;
             if (ageRange === '36-45') return t.age >= 36 && t.age <= 45;
