@@ -9,27 +9,46 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">
-                <h1><a href="index.html" style="color: inherit; text-decoration: none;">Mucha M </a></h1>
-                <p class="tagline">Agencia de Talentos</p>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="index.html#actores">Actores</a></li>
-                <li><a href="index.html#sobre-nosotros">Sobre Nosotros</a></li>
-                <li><a href="index.html#contacto">Contacto</a></li>
-            </ul>
-        </div>
-    </nav>
+   export default function Navbar() {
+  return (
+    <header className="fixed top-0 left-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-neutral-200">
+      <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
 
-    <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/34650014048" class="whatsapp-btn" target="_blank" title="Contáctanos por WhatsApp">
-        <i class="fab fa-whatsapp"></i>
+        <Link href="/" className="text-3xl font-serif tracking-tight font-semibold">
+          PM
+        </Link>
+
+        <nav className="hidden md:flex items-center gap-8 text-sm uppercase tracking-wide">
+          <Link href="/">Inicio</Link>
+          <Link href="/actor">Actor</Link>
+          <Link href="/actriz">Actriz</Link>
+          <Link href="/cara-nueva">Cara nueva</Link>
+          <Link href="/infantil">Infantil</Link>
+          <Link href="/internacional">Internacional</Link>
+          <Link href="/contacto">Contacto</Link>
+        </nav>
+
+        <button className="md:hidden">
+          <Menu size={24} />
+        </button>
+      </div>
+    </header>
+  )
+}
+
+   import { MessageCircle } from "lucide-react"
+
+export default function WhatsAppButton() {
+  return (
+    <a
+      href="https://wa.me/34600000000"
+      target="_blank"
+      className="fixed bottom-6 right-6 bg-green-500 text-white p-5 rounded-full shadow-2xl hover:scale-110 transition z-50"
+    >
+      <MessageCircle size={28} />
     </a>
-
+  )
+}
     <!-- Talent Profile Section -->
     <section class="talent-profile">
         <div class="container">
