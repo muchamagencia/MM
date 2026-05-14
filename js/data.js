@@ -2,21 +2,21 @@
 const talents = [
     {
         id: 1,
-        name: "Carlos Martínez",
+        name: "Raúl Yuste",
         category: "actor",
-        age: 28,
+        age: 48,
         gender: "masculino",
-        origin: "españa",
+        origin: "españa" "madrid",
         skills: ["drama", "cine", "televisión"],
         description: "Actor versátil con experiencia en cine y televisión"
     },
     {
         id: 2,
-        name: "Laura García",
-        category: "actriz",
-        age: 25,
-        gender: "femenino",
-        origin: "españa",
+        name: "Borja Texeira",
+        category: "actor",
+        age: 43,
+        gender: "actor",
+        origin: "españa" "europa" "canarias",
         skills: ["comedia", "drama", "doblaje"],
         description: "Actriz talentosa con formación en interpretación profesional"
     },
